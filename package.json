@@ -14,6 +14,7 @@
 	},
 	"description": "A version of Sinon's useFakeTimers that you can call multiple times in a test.",
 	"devDependencies": {
+		"@types/node": "^18.7.3",
 		"@typescript-eslint/eslint-plugin": "^5.33.0",
 		"@typescript-eslint/parser": "^5.33.0",
 		"commitlint": "^17.0.3",
@@ -58,7 +59,8 @@
 		"lint": "npx eslint \"src/*.ts\"",
 		"lint:md": "npx markdownlint \"**/*.md\" \".github/**/*.md\"",
 		"lint:spelling": "cspell \"**\" \".github/**/*\"",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"test": "node src/index.test.js"
 	},
 	"version": "0.0.1"
 }
