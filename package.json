@@ -1,0 +1,64 @@
+{
+	"author": {
+		"email": "git@joshuakgoldberg.com",
+		"name": "Josh Goldberg"
+	},
+	"browser": "./lib/index.js",
+	"bugs": {
+		"url": "https://github.com/FullScreenShenanigans/EightBittr/issues"
+	},
+	"name": "sinon-timers-repeatable",
+	"dependencies": {
+		"@types/sinon": "^10.0.13",
+		"sinon": "^14.0.0"
+	},
+	"description": "A version of Sinon's useFakeTimers that you can call multiple times in a test.",
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.33.0",
+		"@typescript-eslint/parser": "^5.33.0",
+		"commitlint": "^17.0.3",
+		"cspell": "^6.6.1",
+		"eslint": "^8.21.0",
+		"eslint-config-prettier": "^8.5.0",
+		"husky": "^8.0.0",
+		"jest": "^28.1.0",
+		"markdownlint-cli": "^0.31.1",
+		"prettier": "^2.6.2",
+		"pretty-quick": "^3.1.3",
+		"typescript": "^4.7.4"
+	},
+	"exports": {
+		"require": "./lib/index.cjs",
+		"import": "./src/index.js"
+	},
+	"homepage": "https://github.com/FullScreenShenanigans/sinon-timers-repeatable/tree/main/packages/sinon-timers-repeatable",
+	"keywords": [
+		"sinon",
+		"fake",
+		"clock",
+		"useFakeTimers",
+		"tests",
+		"testing",
+		"unit"
+	],
+	"license": "MIT",
+	"main": "lib/index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/FullScreenShenanigans/EightBittr.git"
+	},
+	"type": "module",
+	"types": "./src/index.d.ts",
+	"scripts": {
+		"compile:amd": "tsc --module amd --outFile lib/index.amd.js",
+		"compile:cjs": "tsc --module commonjs --outFile lib/index.cjs",
+		"compile": "tsc",
+		"format": "prettier \"**/*\" --ignore-unknown",
+		"format:write": "yarn format --write",
+		"lint": "npx eslint \"src/*.ts\"",
+		"lint:md": "npx markdownlint \"**/*.md\" \".github/**/*.md\"",
+		"lint:spelling": "cspell \"**\" \".github/**/*\"",
+		"prepare": "husky install"
+	},
+	"version": "0.0.1"
+}
