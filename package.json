@@ -62,5 +62,5 @@
 		"prepare": "husky install",
 		"test": "node src/index.test.js"
 	},
-	"version": "0.0.1"
+	"version": "0.0.2"
 }
