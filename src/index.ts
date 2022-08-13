@@ -1,3 +1,5 @@
+/// <amd-module name='sinon-timers-repeatable'/>
+
 import * as sinon from "sinon";
 
 declare const afterEach: ((callback: () => void) => void) | undefined;
