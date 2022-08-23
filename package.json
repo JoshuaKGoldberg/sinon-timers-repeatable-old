@@ -56,7 +56,7 @@
 		"compile": "tsc",
 		"format": "prettier \"**/*\" --ignore-unknown",
 		"format:write": "yarn format --write",
-		"lint": "npx eslint \"src/*.ts\"",
+		"lint": "npx eslint \"src/*.ts\"  --max-warnings 0 --report-unused-disable-directives",
 		"lint:md": "npx markdownlint \"**/*.md\" \".github/**/*.md\"",
 		"lint:spelling": "cspell \"**\" \".github/**/*\"",
 		"prepare": "husky install",

@@ -7,7 +7,7 @@ declare const afterEach: ((callback: () => void) => void) | undefined;
 let clock: ReturnType<typeof sinon.useFakeTimers> | undefined;
 
 if (typeof afterEach !== "undefined") {
-	afterEach?.(() => {
+	afterEach(() => {
 		clock?.reset();
 	});
 }

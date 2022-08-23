@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for your interest in contributing to _Learning TypeScript_'s projects! 💖
+Thanks for your interest in contributing to `sinon-timers-repeatable`! 💖
 
 ## Code of Conduct
 
@@ -9,9 +9,9 @@ This project contains a [Contributor Covenant code of conduct](./CODE_OF_CONDUCT
 ## Getting Started
 
 ```shell
-git clone https://github.com/your-username/projects learning-typescript-projects
-cd learning-typescript-projects
-npm install
+git clone https://github.com/your-username/sinon-timers-repeatable
+cd sinon-timers-repeatable
+yarn
 ```
 
 ## Reporting Issues
